@@ -1,0 +1,30 @@
+{
+  "name": "NektoMeWrapper",
+  "version": "1.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^27.3.11",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {},
+  "build": {
+    "appId": "com.geektech.NektoMeWrapper",
+    "productName": "NektoMeWrapper",
+    "copyright": "Copyright ego nety",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility",
+      "icon": "assets/app-icon.png"
+    },
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
